@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    display: inline-block;
+}
+main{
+    flex-grow: 1;
+    background-color: hsl(205, 33%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    flex-grow: 0;
+}
+
+section{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.25em;
+}
+
+.bold-text{
+    font-weight: 800;
+}
+
+.normal-text{
+    font-weight: 500;
+    font-size: 0.75em;
+}
+
+#number-notifications{
+    padding: 0.2em 0.75em;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    margin-left: 0.5em;
+    margin-right: auto;
+    border-radius: 0.4em;
+    font-size: 0.75em;
+}
+
+.notification{
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 0.25em 0;
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    font-size: 0.9em;
+}
+
+.unread{
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 0.5em;
+}
+
+.notification .avatar{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.notification .notification-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification .notification-date{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.private-msg{
+    padding: 1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+.img-preview{
+    width: 3em;
+    height: 3em;
+    border-radius: 0.25em;
+    margin-left: 0.5em;
+}
+@media (min-width : 376px){
+    section{
+        width: 50% ;
+        height: 85%;
+    }
+}
